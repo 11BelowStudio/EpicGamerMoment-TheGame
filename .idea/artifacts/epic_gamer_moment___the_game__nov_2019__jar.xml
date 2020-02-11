@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="epic gamer moment - the game (nov 2019):jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/epic_gamer_moment___the_game__nov_2019__jar</output-path>
+    <root id="archive" name="epic gamer moment - the game (nov 2019).jar">
+      <element id="module-output" name="epic gamer moment - the game (nov 2019)" />
+    </root>
+  </artifact>
+</component>

@@ -6,6 +6,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class TitlePanel extends JPanel {
 
@@ -21,7 +22,11 @@ public class TitlePanel extends JPanel {
 
 
         try {
-            titleImage = ImageIO.read(new File("images/titleImage.png"));
+            //titleImage = ImageIO.read(new File("src/images/titleImage.png"));
+
+            titleImage = ImageIO.read(this.getClass().getResource("/images/titleImage.png"));
+
+            //titleImage = ImageIO.read(Objects.requireNonNull(getClass().getClassLoader().getResource("src/images/titleImage.png")));
             this.setPreferredSize(new Dimension(titleImage.getWidth(), titleImage.getHeight()));
         } catch (Exception e){
             System.out.println("oh hecc");

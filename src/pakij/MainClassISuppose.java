@@ -1,7 +1,5 @@
 package pakij;
 
-import jdk.nashorn.internal.scripts.JO;
-import sun.applet.Main;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,8 +11,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class MainClassISuppose {
 
@@ -76,11 +72,11 @@ public class MainClassISuppose {
 
         String line = null;
 
-        File aFile = new File("Super Secret Files/GamerFile.txt");
+        File aFile = new File("SuperSecretFiles/GamerFile.txt");
 
 
         try{
-            FileReader fr = new FileReader("Super Secret Files/GamerFile.txt");
+            FileReader fr = new FileReader("SuperSecretFiles/GamerFile.txt");
             BufferedReader br = new BufferedReader(fr);
             line = br.readLine();
             System.out.println(line);
@@ -99,11 +95,11 @@ public class MainClassISuppose {
 
         try{
             if ((line == null) || (Integer.parseInt(line) < gameFrame.gamer.timeSurvived())){
-                Path file = Paths.get("Super Secret Files/GamerFile.txt");
+                Path file = Paths.get("SuperSecretFiles/GamerFile.txt");
                 Files.write(file, thisList, Charset.forName("UTF-8"));
                 line = gameFrame.gamer.toString();
             } else{
-                FileReader fr = new FileReader("Super Secret Files/GamerFile.txt");
+                FileReader fr = new FileReader("SuperSecretFiles/GamerFile.txt");
                 BufferedReader br = new BufferedReader(fr);
                 br.readLine();
                 line = br.readLine();

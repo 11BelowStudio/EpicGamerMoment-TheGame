@@ -1,3 +1,8 @@
+you will need to keep SuperSecretFiles in the same directory as this JAR, otherwise the score recording won't work!
+
+
+Github repo: https://github.com/IDontHaveAnyClueWhatToPutHere/EpicGamerMoment-TheGame
+
 
 **OKAY SO BASICALLY THESE ARE THE INSTRUCTIONS**
 
@@ -46,6 +51,3 @@
     and yeah the code quality got really bad towards the end of the development, oh well
 
     and uhh yeah have fun (if that is, in fact, possible) bye
-
-
-    and no, this does not fulfill the brief for the CE203 assignment anyway

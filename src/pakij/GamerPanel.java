@@ -15,7 +15,9 @@ public class GamerPanel extends JPanel {
     BufferedImage gamerImage;
     Dimension size;
 
-    ArrayList<File> imageList;
+    //ArrayList<File> imageList;
+
+    String[] imageArray;
 
     int currentImage;
 
@@ -24,13 +26,15 @@ public class GamerPanel extends JPanel {
 
     public GamerPanel() {
 
-
+        /*
         imageList = new ArrayList<>();
-        imageList.add(new File("images/img1.png"));
-        imageList.add(new File("images/img2.png"));
-        imageList.add(new File("images/img3.png"));
-        imageList.add(new File("images/img4.png"));
-        imageList.add(new File("images/oof.png"));
+        imageList.add(new File("src/images/img1.png"));
+        imageList.add(new File("src/images/img2.png"));
+        imageList.add(new File("src/images/img3.png"));
+        imageList.add(new File("src/images/img4.png"));
+        imageList.add(new File("src/images/oof.png"));
+        */
+        imageArray = new String[]{"/images/img1.png","/images/img2.png","/images/img3.png","/images/img4.png","/images/oof.png"};
 
         currentImage = 0;
 
@@ -46,7 +50,8 @@ public class GamerPanel extends JPanel {
 
     public void setImage(){
         try {
-            gamerImage = ImageIO.read(imageList.get(currentImage));
+            //gamerImage = ImageIO.read(imageList.get(currentImage));
+            gamerImage = ImageIO.read(this.getClass().getResource(imageArray[currentImage]));
             this.setPreferredSize(new Dimension(gamerImage.getWidth(), gamerImage.getHeight()));
         } catch (Exception e){
             System.out.println("oh hecc");

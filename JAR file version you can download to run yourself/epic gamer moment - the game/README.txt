@@ -1,7 +1,12 @@
-you will need to keep SuperSecretFiles in the same directory as this JAR, otherwise the score recording won't work!
+pls note: you will need to keep SuperSecretFiles folder in the same directory as the .jar, otherwise the score recording won't work!
 
+Github repo: https://github.com/11BelowStudio/EpicGamerMoment-TheGame
+itch.io page: https://11belowstudio.itch.io/EpicGamerMoment-TheGame
 
-Github repo: https://github.com/IDontHaveAnyClueWhatToPutHere/EpicGamerMoment-TheGame
+This game was made in 9 hours (between 6pm on 23/11/19 to 3am on 24/11/19) for a game jam hosted by the University of Essex Game Development Society.
+The theme was 'A Day In The Life', in case you were wondering.
+
+It runs on Java 8, so, if you have Java installed, it should work fine (or, at least, as fine as something like this can run).
 
 
 **OKAY SO BASICALLY THESE ARE THE INSTRUCTIONS**
@@ -37,7 +42,7 @@ Github repo: https://github.com/IDontHaveAnyClueWhatToPutHere/EpicGamerMoment-Th
 
     Help with getting the images into the JAR file: jberg on Stack Overflow https://stackoverflow.com/a/5485186
 
-    Everything else: R. Lowe
+    Everything else: 11BelowStudio
 
 **PROGRAMS USED**
 

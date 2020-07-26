@@ -15,7 +15,7 @@ It runs on Java 8, so, if you have Java installed, it should work fine (or, at l
 
 You are an epic gamer, who must resist the urge to say The Gamer Word for as long as possible.
 
-## WHAT YOU NEED TO DO*
+## WHAT YOU NEED TO DO
 
 * Resist the urge to say The Gamer word
 

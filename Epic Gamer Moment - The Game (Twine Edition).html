@@ -94,7 +94,7 @@ $gamertag, you were a very brave $gender, but you only survived for $survivalTim
 
 [[Retry?-&gt;highscore]]
 
-(if: $survivalTime &gt; $highScore)[(set: $highScore = $survivalTime)(set: $hsGamertag = $gamertag)(set: $hsGender = $gender)]</tw-passagedata><tw-passagedata pid="9" name="am gamer" tags="" position="213,286" size="100,100">(set: $gender = &quot;Gamer&quot;)
+(if: $survivalTime &gt; $highScore)[(set: $highScore = $survivalTime)(set: $hsGamertag = $gamertag)(set: $hsGender = $gender)(if:(save-game:&quot;epic gamer save&quot;))[*High score saved!*](else:)[*your high score could not be saved*]]</tw-passagedata><tw-passagedata pid="9" name="am gamer" tags="" position="213,286" size="100,100">(set: $gender = &quot;Gamer&quot;)
 (go-to: &quot;main&quot;)</tw-passagedata><tw-passagedata pid="10" name="am political" tags="" position="514,322" size="100,100">(set: $gender = &quot;Political&quot;)
 (go-to: &quot;main&quot;)</tw-passagedata><tw-passagedata pid="11" name="enter into society" tags="" position="360,278" size="100,100">What gender are you?
 
@@ -104,6 +104,7 @@ Or are you a [[Political-&gt;am political]]?
 (set: $gamertag to (prompt: &quot;Enter your gamertag:&quot;,&quot;very epic&quot;))</tw-passagedata><tw-passagedata pid="12" name="init" tags="" position="214,32" size="100,100">(set: $highScore to 0)
 (set: $hsGamertag to &quot;default&quot;)
 (set: $hsGender to &quot;Gamer&quot;)
+(if: (saved-games:) contains &quot;epic gamer save&quot;)[(load-game:&quot;epic gamer save&quot;)]
 (go-to: &quot;title&quot;)</tw-passagedata><tw-passagedata pid="13" name="highscore" tags="" position="568,7" size="100,100">**HIGH SCORE**
 
 $hsGamertag, the bravest $hsGender of all time, lived in a society for $highScore minutes before saying &#39;ploopy&#39;.

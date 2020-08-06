@@ -41,11 +41,11 @@ Your urge to say The Gamer Word is at $urge%
 
 (if: $gamerFuel &gt; 0)[[[Consume GamerFuel to get GamerEnergy-&gt;eat]]](else:)[You don&#39;t have any GamerFuel to consume!]
 
-(if: $gamerCoins &gt; 0)[[[Buy GamerFuel with GamerCoins-&gt;buy]]](else:)[You don&#39;t have any GamerCoins to buy GamerFuel with!]
+(if: $gamerCoins &gt; 0)[(if: $gamerEnergy &gt; 0)[[[Buy GamerFuel with GamerCoins-&gt;buy]]](else:)[You don&#39;t have enough GamerEnergy to go out and buy GamerFuel!]](else:)[You don&#39;t have any GamerCoins to buy GamerFuel with!]
 
 (if: $gamerEnergy &gt; 0)[[[Work for GamerCoins-&gt;work]]](else:)[You don&#39;t have enough GamerEnergy left for you to work for GamerCoins!]
 
-(if: $gamerEnergy &gt; 0)[(if: $urge &gt; 0)[[[P L A Y V I D Y A G A E M-&gt;play]]](else:)[You cannot resist the urge any further.]](else:)[You don&#39;t have enough energy to play vidyagaems]</tw-passagedata><tw-passagedata pid="3" name="eat" tags="" position="0,603" size="100,100">(set: $gamerFuel = $gamerFuel - 1)
+(if: $gamerEnergy &gt; 0)[(if: $urge &gt; 0)[[[P L A Y V I D Y A G A E M-&gt;play]]](else:)[You cannot resist the urge any further.]](else:)[You don&#39;t have enough GamerEnergy to play vidyagaems!]</tw-passagedata><tw-passagedata pid="3" name="eat" tags="" position="0,603" size="100,100">(set: $gamerFuel = $gamerFuel - 1)
 (set: _energyChange = (random: 1,5) * (random: 1,5))
 (set: $gamerEnergy = $gamerEnergy + _energyChange)
 (go-to: &quot;Time passes&quot;)</tw-passagedata><tw-passagedata pid="4" name="work" tags="" position="256,621" size="100,100">(set: _moneyChange = (random: 1,5) * (random: 1,2))
